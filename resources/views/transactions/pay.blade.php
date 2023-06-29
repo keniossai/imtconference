@@ -4,7 +4,7 @@
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="Krystal Digital" name="author">
+    <meta content="Modion Communications" name="author">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Pay</title>

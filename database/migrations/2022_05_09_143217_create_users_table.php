@@ -18,7 +18,6 @@ return new class extends Migration
 
             $table->id();
             $table->foreignId('category_id')->nullable()->constrained();
-            $table->foreignId('branch_id')->nullable()->constrained();
             $table->foreignId('enrol_id')->nullable()->constrained();
 
             $table->string('title');

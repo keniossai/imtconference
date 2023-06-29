@@ -47,7 +47,7 @@ class StoreTransactionRequest extends FormRequest
         })->firstOr(function () use ($fee) {
 
             $transaction = Transaction::create([
-                'reference' => uniqid('nba'),
+                'reference' => uniqid('imt'),
                 'amount'    => $fee->amountPayable
             ]);
 

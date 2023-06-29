@@ -26,7 +26,7 @@
 
     <table align="center" class="hidden">
         <tr style="background:none; border:none; ">
-            <td><span class="text-secondary">FROM:</span> NIGERIAN BAR ASSOCIATION</td>
+            <td><span class="text-secondary">FROM:</span> INSURANCE MEETS TECH</td>
             <td style="text-align: right">
                 <span class="text-secondary">ISSUED:</span>
                 {{ $transaction->created_at->toFormattedDateString() }}
