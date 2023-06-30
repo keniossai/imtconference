@@ -33,6 +33,7 @@ return new class extends Migration
 
             $table->enum('gender', ['M', 'F'])->nullable();
             $table->string('organization')->nullable();
+            $table->string('designation')->nullable();
             $table->year('year_of_call')->nullable();
 
             $table->boolean('is_admin')->nullable();

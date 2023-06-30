@@ -17,7 +17,7 @@
                     <div class="blog-details">
                         <div class="entry-header">
                             <h2 class="entry-title text-center">
-                                <a href="#">Nigeria Bar Association's Privacy Policy</a>
+                                <a href="#">Insurance Meets Tech Privacy Policy</a>
                             </h2>
                         </div><!-- header end -->
 

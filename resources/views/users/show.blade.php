@@ -88,20 +88,42 @@
                     <form class="exvent-form x-submit" action="{{ route('api.users.update', $user) }}" method="post"
                     data-then="alert">
                     @method("PUT")
-                        <div class="row gy-4">
+                        <div class="row gy-4" x-data="{ can_update: {{ user()->can('update', $user) ? 'true' : 'false' }} }">
                             <div class="col-md-6">
                                 <div class="single-input white-bg">
-                                    <input type="text" name="first_name" id="first_name" required value="{{ $user->first_name }}" :disabled="!can_update">
+                                    <select name="category_id" id="category_id" style="border: none; padding: 10px 25px; box-shadow: none; line-height: 30px; transition: all 0.3s linear;" class="form-control single-input white-bg" required>
+                                        <option></option>
+                                        @foreach ($categories as $category)
+                                            @continue($category->id == 15)
+                                            <option value="{{ $category->id }}" @selected($category->is($user->category))>
+                                                {{ $category->name }}
+                                            </option>
+
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="single-input white-bg">
-                                    <input type="text" name="last_name" id="last_name" required value="{{ $user->middle_name }}" :disabled="!can_update">
+                                        <select style="border: none; padding: 10px 25px; box-shadow: none; line-height: 30px; transition: all 0.3s linear;" class="form-control single-input white-bg" name="title" id="title" required :disabled="!can_update">
+                                            <option>{{ $user->title }}</option>
+                                            <x-title-options />
+                                        </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="single-input white-bg">
-                                    <input type="text" name="last_name" id="last_name" required value="{{ $user->last_name }}" :disabled="!can_update">
+                                    <input type="text" name="first_name" id="first_name" required value="{{ $user->first_name }}" :enable="!can_update">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single-input white-bg">
+                                    <input type="text" name="last_name" id="last_name" required value="{{ $user->middle_name }}" :enable="!can_update">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single-input white-bg">
+                                    <input type="text" name="last_name" id="last_name" required value="{{ $user->last_name }}" :enable="!can_update">
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -113,17 +135,17 @@
                             <div class="col-md-6">
                                 <div class="single-input white-bg">
                                     <input name="phone" id="phone" required maxlength="15" minlength="10"
-                                    type="tel" required value="{{ $user->phone }}" :disabled="!can_update">
+                                    type="tel" required value="{{ $user->phone }}" :enable="!can_update">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="single-input white-bg">
-                                    <input type="text" name="organization" id="organization" required value="{{ $user->organization }}" :disabled="!can_update">
+                                    <input type="text" name="organization" id="organization" required value="{{ $user->organization }}" :enable="!can_update">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="single-input white-bg">
-                                    <input type="text" name="designation" id="designation" required value="{{ $user->designation }}" :disabled="!can_update">
+                                    <input type="text" name="designation" id="designation" required value="{{ $user->designation }}" :enable="!can_update">
                                 </div>
                             </div>
                             <div class="col-md-6">

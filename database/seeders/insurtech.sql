@@ -27,18 +27,16 @@ SET time_zone = "+00:00";
 --
 
 INSERT INTO `branches` (`id`, `name`, `code`, `slug`, `created_at`, `updated_at`) VALUES
-(1, 'Aba Branch', '001', 'ABA', NULL, NULL),
-(2, 'Abakaliki Branch', '002', 'ABAKALIKI', NULL, NULL),
-(3, 'Abeokuta Branch', '003', 'ABEOKUTA', NULL, NULL);
+(1, 'Civic Center', '100001', 'Lagos', NULL, NULL);
 
 --
 -- Dumping data for table `categories`
 --
 
 INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'Delegate', NULL, NULL, NULL),
-(2, 'Visitor', NULL, NULL, NULL),
-(3, 'Exhibitor', NULL, NULL, NULL);
+(1, 'Delegates', NULL, NULL, NULL),
+(2, 'Participants', NULL, NULL, NULL);
+-- (3, 'Exhibitor', NULL, NULL, NULL);
 
 
 --
@@ -46,17 +44,16 @@ INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`
 --
 
 INSERT INTO `enrols` (`id`, `name`, `year_of_call`, `scn`, `email`, `phone`, `address`, `created_at`, `updated_at`) VALUES
-(1, 'DELEGATE', '2023', 'SCN000079', '', '', '', NULL, NULL),
-(2, 'VISITOR', '2023', 'SCN000080', '', '', '', NULL, NULL),
-(3, 'EXHIBITION', '1928', 'EXH000081', '', '', '', NULL, NULL);
+(1, 'DELEGATES', '2023', 'DEL000079', '', '', '', NULL, NULL),
+(2, 'PARTICIPANT', '2023', 'PA000080', '', '', '', NULL, NULL);
 --
 -- Dumping data for table `fees`
 --
 
 INSERT INTO `fees` (`id`, `category_id`, `period_id`, `amount`, `min_age`, `max_age`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, 30000, NULL, NULL, NULL, NULL),
-(2, 2, 2, 50000, NULL, NULL, NULL, NULL),
-(3, 3, 3, 75000, NULL, NULL, NULL, NULL);
+(1, 1, 2, 120000,  NULL, NULL, NULL, NULL),
+(2, 2, 2, 20000, NULL, NULL, NULL, NULL);
+-- (3, 3, 3, 75000, NULL, NULL, NULL, NULL);
 
 
 --
@@ -74,8 +71,7 @@ INSERT INTO `payments` (`id`, `transaction_id`, `user_id`, `fee_id`, `created_at
 
 INSERT INTO `periods` (`id`, `name`, `virtual`, `expires_at`, `created_at`, `updated_at`) VALUES
 (1, 'Delegate', 0, '2023-06-04 22:59:59', NULL, NULL),
-(2, 'Visitor', 0, '2023-07-23 22:59:59', NULL, NULL),
-(3, 'Exhibitor', 0, '2023-08-14 22:59:59', NULL, NULL);
+(2, 'Visitor', 0, '2023-07-23 22:59:59', NULL, NULL);
 
 
 --
@@ -83,7 +79,7 @@ INSERT INTO `periods` (`id`, `name`, `virtual`, `expires_at`, `created_at`, `upd
 --
 
 INSERT INTO `transactions` (`id`, `reference`, `amount`, `paid_at`, `created_at`, `updated_at`, `created_by`, `updated_by`) VALUES
-(1, 'nba646229572707b', 22000, '2023-05-15 12:49:19', '2023-05-15 12:45:11', '2023-05-15 12:49:19', 478, NULL);
+(1, 'imt646229572707b', 22000, '2023-05-15 12:49:19', '2023-05-15 12:45:11', '2023-05-15 12:49:19', 478, NULL);
 
 SET FOREIGN_KEY_CHECKS=1;
 COMMIT;

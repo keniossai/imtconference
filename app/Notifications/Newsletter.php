@@ -46,11 +46,11 @@ class Newsletter extends Notification implements ShouldQueue
 
         return (new MailMessage)
             ->subject('Early Birds Ends - Take advantage of the early bird rates)')
-            ->greeting("Dear Intending Delegate")
-            ->line("It’s now officially 12hours to the close of early bird registration. Take advantage of the early bird rates and make your payment using this link")
+            ->greeting("Dear Intending Delegate, Participant")
+            ->line("It’s now officially open for registration. Take advantage and make your payment using this link")
             ->action('Pay Now', route('users.payments.show', $notifiable))
-            ->line("Rates valid until midnight of June 4th, 2023")
-            ->salutation(new HtmlString("<br>Regards,<br>Annual General Conference Planning Committee 2023"));
+            ->line("Registration is open until midnight of September 27th, 2023")
+            ->salutation(new HtmlString("<br>Regards,<br>IMT Conference Planning Committee 2023"));
 
 
 //        ->subject('RE: Collection of Conference Material (Clarification on Opening Ceremony)')

@@ -35,27 +35,26 @@ class Welcome extends Notification
        $notifiable->assignRegNumber(); // to make sure every reg_number is generate before sending the mail
 
         return (new MailMessage)
-            ->subject("NBA AGC 2023 - Confirmation of Registration")
+            ->subject("IMT Conference 2023 - Confirmation of Registration")
             ->greeting("Dear $notifiable->name")
-            ->line("Thank you for registering for the Nigerian Bar Association 2023 Annual General Conference with the theme;
-                **Getting it Right**, scheduled to hold from Friday, the 25th of August to Friday,
-                the 1st of September 2023 in MKO Abiola Stadium Abuja.")
+            ->line("Thank you for registering for the Insurance Meets Tech 2023 Conference with the theme;
+                **Unlocking policy and tech bottlenecks hindering disruptive insurance penetration**, scheduled to hold from Thursday, the 28th of September to Saturday, 29th September 2023 in Civic Center Victoria Island, Lagos.")
             ->when($notifiable->isAttendingVirtually(), function ($message) {
 
-                $message->line("Please note that it will be a Hybrid Conference and further details about the Conference such as Programme, Speakers, etc. can be found via the NBA Conference website. Additionally, as a virtual participant your conference materials will be electronic and you will be able to access them via your profile dashboard."
+                $message->line("Please note that it will be a Physical Conference and further details about the Conference such as Programme, Speakers, etc. can be found via the IMT Conference website."
                 );
             }, function ($message) use ($notifiable) {
 
-                $message->line("Your registration number is **{$notifiable->reg_number}**.")
-                    ->line("Please note that it will be a Hybrid Conference and as a physical delegate, you will be
+                $message->line("Your registration category is **{$notifiable->category}**.")
+                    ->line("Please note that it will be a Physical Conference and as a physical delegate, you will be
                     required to show this mail and an official photo identification of yourself in order to collect
                     your Conference materials. Also, further details about the Conference such as Programme,
-                    Speakers, etc. can be found via the NBA Conference website."
+                    Speakers, etc. can be found via the IMT Conference website."
                 );
             })
-            ->line("On behalf of the Technical Committee on Conference Planning (AGCPC) for the NBA 2023
+            ->line("On behalf of the Technical Committee on Conference Planning (MODION) for the IMT 2023
                 Annual General Conference, I look forward to welcoming you.")
             ->action('Visit the conference site', route('home'))
-            ->salutation(new HtmlString("Mazi Afam Osigwe, SAN<br><small>AGCPC Chairperson</small>"));
+            ->salutation(new HtmlString("Modion Communications, Mr<br><small>ODION ALEOBA</small>"));
     }
 }

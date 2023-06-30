@@ -12,8 +12,6 @@
 <option>Mr</option>
 <option>Pres</option>
 <option>Prof</option>
-<option>Rev</option>
-<option>SAN</option>
 <option>Sen</option>
 <option>Sir</option>
 <option>Sis</option>

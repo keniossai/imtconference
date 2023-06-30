@@ -64,7 +64,7 @@
                                         Uh oh! Something's not right.<br>
                                         We couldn't find your payment category. Please contact support for assistance.
                                     </div>
-                                @else                        
+                                @else
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="section-title-wrap">
@@ -77,7 +77,7 @@
                                     </div>
                                     <div class="row justify-content-center">
                                         <div class="col-lg-6">
-                                        
+
                                             <div class="price-card text-center">
                                                 <div class="price-header purple-bg">
                                                     <img src="{{ asset('assets/images/shape/price_shape1.png') }}" alt="Shape" class="price-header-shape">
@@ -143,7 +143,7 @@
             handler.openIframe();
         }
 
-        
+
 
     </script>
 @endpush
