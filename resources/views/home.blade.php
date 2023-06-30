@@ -73,7 +73,7 @@
     <div class="swiper hero-slide">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <div class="exvent-hero-section-05" style="background-image: url(assets/images/bg.png);">
+                <div class="exvent-hero-section-05" style="background-image: url(assets/images/bg-2.png);">
                     <div class="container">
                         <div class="row justify-content-center align-items-center">
                             <div class="col-md-8 text-center">
