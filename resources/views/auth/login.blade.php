@@ -59,6 +59,7 @@
     </div>
 </div>
 
+<x-login-footer/>
     
 
 @endsection
