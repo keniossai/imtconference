@@ -225,7 +225,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div class="pricing-box bg-pricing xs-mb30">
                         <div class="pricing-header">
-                            <div class="pricing-value">Thematic Areas</div>
+                            <div class="pricing-value">Focus</div>
                         </div>
                         <div class="pricing-content">
                             <ul>
@@ -408,9 +408,7 @@
             <div class="row g-0">
                 <div class="col-lg-5 order-lg-1 order-2">
                     <div class="about-thumb-wrap">
-                        <img src="{{ cloudinary_url('imt/gallery/5_yylhov') }}" alt="about_img1">
-                        <img src="{{ cloudinary_url('imt/gallery/3_kvrhtd') }}" style="width: 500px; height: 350px;"
-                            alt="about_img2">
+                        <img src="{{ cloudinary_url('imt/background/agu_tyguik') }}" alt="about_img1">
                     </div>
                 </div>
                 <div class="col-lg-7 order-lg-1 order-1">
@@ -1488,8 +1486,8 @@
                 <div class="col-12">
                     <div class="section-title-wrap">
                         <div class="section-title text-center">
-                            <h5 class="sub-title">Previous Gallery</h5>
-                            <h2 class="title">Past event memories</h2>
+                            <!--<h5 class="sub-title">Gallery</h5>-->
+                            <h2 class="title">Past Event</h2>
                         </div>
                     </div>
                 </div>

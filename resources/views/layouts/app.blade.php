@@ -25,7 +25,7 @@
 	============================================ -->
 
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
 
     <!-- Plugins CSS -->
