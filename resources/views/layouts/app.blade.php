@@ -25,20 +25,20 @@
 	============================================ -->
 
     <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/plugins/all.min.css">
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/plugins/flaticon.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
 
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/plugins/swiper-bundle.min.css">
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/plugins/aos.css">
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/plugins/magnific-popup.css">
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/plugins/lightbox.min.css">
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/plugins/gijgo.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/aos.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/lightbox.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/gijgo.min.css') }}">
     <link rel="stylesheet" href="{{ asset('scsss/loader.scsss') }}">
 
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="{{ asset('assets') }}/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
 
 </head>
@@ -185,19 +185,19 @@
     <script src="{{ asset('assets/js/vendor/modernizr-3.11.2.min.js') }}"></script>
 
     <!-- Bootstrap JS -->
-    <script src="{{ asset('assets/js/plugins/popper.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 
     <!-- Plugins JS -->
-    <script src="{{ asset('assets/js/plugins/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins/aos.js')}}"></script>
-    <script src="{{ asset('assets/js/plugins/waypoints.min.js')}}"></script>
-    <script src="{{ asset('assets/js/plugins/back-to-top.js')}}"></script>
-    <script src="{{ asset('assets/js/plugins/jquery.counterup.min.js')}}"></script>
-    <script src="{{ asset('assets/js/plugins/appear.min.js')}}"></script>
-    <script src="{{ asset('assets/js/plugins/jquery.magnific-popup.min.js')}}"></script>
-    <script src="{{ asset('assets/js/plugins/lightbox.min.js') }}"></script>
-    <script src="{{ asset('assets/js/plugins/gijgo.min.js') }}"></script>
+    <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/aos.js')}}"></script>
+    <script src="{{ asset('assets/js/waypoints.min.js')}}"></script>
+    <script src="{{ asset('assets/js/back-to-top.js')}}"></script>
+    <script src="{{ asset('assets/js/jquery.counterup.min.js')}}"></script>
+    <script src="{{ asset('assets/js/appear.min.js')}}"></script>
+    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{ asset('assets/js/lightbox.min.js') }}"></script>
+    <script src="{{ asset('assets/js/gijgo.min.js') }}"></script>
     <!-- Main JS -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap-notify.js?v=1.0') }}"></script>
@@ -219,7 +219,7 @@
             s0.parentNode.insertBefore(s1, s0);
         })();
 
-        
+
     </script>
     <!--End of Tawk.to Script-->
 </body>
