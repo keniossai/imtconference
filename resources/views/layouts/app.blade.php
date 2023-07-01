@@ -70,9 +70,9 @@
                         <ul class="main-menu">
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="#">Why Attend</a></li>
-                            <li><a href="blog.html">Sponsorship Benefits</a></li>
-                            <li><a href="about.html">Organisers</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Sponsorship Benefits</a></li>
+                            <li><a href="#">Organisers</a></li>
+                            <li><a href="#">Contact</a></li>
                             @auth
                                 <li>
                                     <a href="blog.html">
@@ -136,34 +136,29 @@
             <div class="offcanvas-body">
                 <div class="offcanvas-menu">
                     <ul class="main-menu">
-                        <li class="active-menu">
-                            <a href="/">Home</a></li>
-                        <li>
-                            <a href="about.html">Aboute Us</a>
-                        </li>
-                        <li><a href="#">Pages</a>
-                            <ul class="sub-menu">
-                                <li><a href="speaker-01.html">Speaker 01</a></li>
-                                <li><a href="speaker-02.html">Speaker 02</a></li>
-                                <li><a href="speaker-03.html">Speaker 03</a></li>
-                                <li><a href="speaker-single.html">Speaker Single</a></li>
-                                <li><a href="event-list.html">Event List</a></li>
-                                <li><a href="event-schedule.html">Event Schedule</a></li>
-                                <li><a href="event-single.html">Event Single</a></li>
-                                <li><a href="login-register.html">Login & Register</a></li>
-                                <li><a href="testimonial.html">Testimonial</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="faq.html">FQA's</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="blog.html">Blog</a>
-                            <ul class="sub-menu">
-                                <li><a href="blog.html">Blog list</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Why Attend</a></li>
+                        <li><a href="#">Sponsorship Benefits</a></li>
+                        <li><a href="#">Organisers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        @auth
+                            <li>
+                                <a href="blog.html">
+                                    <img src="{{ user('photo') }}" alt="Photo" width="30"
+                                            class="rounded-circle">
+                                        {{ user('name') }}
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="{{ route('users.show', user()) }}">Profile</a></li>
+                                    <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
+                                    <li><a href="{{ route('logout') }}">Logout</a></li>
+                                </ul>
+                            </li>
+                        @else
+                        <li><a href="{{ route('login') }}">login</a></li>
+                        <li><a href="{{ route('register') }}">Register</a></li>
+                        @endif
                     </ul>
                 </div>
             </div>

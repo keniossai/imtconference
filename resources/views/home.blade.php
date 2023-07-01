@@ -271,7 +271,7 @@
                             <div class="video-img-wrap">
                                 <img src="{{asset('assets/images/ibrahim.png')}}" alt="Thumbnail" class="video-img1 img-fluid">
                                 <div class="button-img">
-                                    <img src="{{asset('assets/images/ibrahim.png')}}" alt="Thumbnail" class="video-img2 img-fluid">
+                                    <img src="https://res.cloudinary.com/devguy/image/upload/v1688227360/imt/background/ayo.jpg" style="width: 96%;" alt="Thumbnail" class="video-img2 img-fluid">
                                     <div class="play-btn">
                                         <a href="https://www.youtube.com/watch?v=QtHeVwv2x4c" class="popup-video"><i class="fas fa-play"></i></a>
                                     </div>
@@ -361,6 +361,8 @@
         </div>
     </div>
     <!-- Speaker Area End -->
+
+    <!-- Schedule Area end -->
         <div class="schedule-area schedule-area-2 section-padding-02 grey-bg">
             <img src="assets/images/shape/schedule_shape1.png" class="schedule-shape1" alt="Shape1">
             <img src="assets/images/shape/schedule_shape2.png" class="schedule-shape2" alt="Shape2">
@@ -378,8 +380,8 @@
                     <div class="col-xl-9 col-12">
                         <div class="schedule-top-nav">
                             <div class="nav d-block nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                <p class="nav-link active" id="day-1-tab" data-bs-toggle="pill" data-bs-target="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Day One</p>
-                                <p class="nav-link" id="day-2-tab" data-bs-toggle="pill" data-bs-target="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Day Two</p>
+                                <p class="nav-link active" id="day-1-tab" data-bs-toggle="pill" data-bs-target="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Day 1 September 28</p>
+                                <p class="nav-link" id="day-2-tab" data-bs-toggle="pill" data-bs-target="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Day 2 September 29</p>
                             </div>
                         </div>
                     </div>
@@ -845,13 +847,38 @@
                                             </div>
                                         </div>
                                         <div class="row g-0 align-items-center shedule-row">
+                                            <div class="col-md-3 col-12">
+                                                <div class="schedule-thumbnail">
+                                                    <div class="schedule-time">
+                                                        <h3 class="time" style="color: #9F20B6;">5</h3>
+                                                        <div class="month-time">
+                                                            <span class="month">Time</span>
+                                                            <span class="duration-event">11:46am – Noon</span>
+                                                        </div>
+                                                    </div>
+                                                    <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
+                                                        width="100" alt="Thumbnail" class="schedule-thumb-img">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 col-12">
+                                                <div class="schedule-content-wrap">
+                                                    <div class="schedule-content">
+                                                        <div class="schedule-location">
+                                                            <p></p>
+                                                        </div>
+                                                        <h4 class="schedule-title">Disruptive product/service Demo </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row g-0 align-items-center shedule-row">
                                             <div class="col-lg-3 col-12">
                                                 <div class="schedule-thumbnail">
                                                     <div class="schedule-time">
-                                                        <h3 class="time">2</h3>
+                                                        <h3 class="time" style="color: #9F20B6;">6</h3>
                                                         <div class="month-time">
                                                             <span class="month">Time</span>
-                                                            <span class="duration-event">10:00am – 10:45am</span>
+                                                            <span class="duration-event">12: 01pm – 1:15pm</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -862,19 +889,20 @@
                                                         <div class="schedule-location">
                                                             <p></p>
                                                         </div>
-                                                        <h4 class="schedule-title">Opening Ceremony</h4>
+                                                        <h4 class="schedule-title">Plenary 4</h4>
+                                                        <h4 class="schedule-title">Internet of Things (IOT), HMOs and accessible healthcare for Nigerian</h4>
                                                         <div class="schedule-descrip">
                                                             <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}" width="80" alt="Thumbnail" class="schedule-thumb-img">
                                                             <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}" width="80" alt="Thumbnail" class="schedule-thumb-img">
                                                             <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}" width="80" alt="Thumbnail" class="schedule-thumb-img">
-                                                            <p class="collapse hidden-desc" id="collapseContent2">• Key notes</p>
-                                                            <p class="collapse hidden-desc" id="collapseContent2">• Goodwill
-                                                                messages from industry dignitaries and stakeholders </p>
-                                                            <p class="collapse hidden-desc" id="collapseContent2">• Convener’s
-                                                                Welcome </p>
+                                                            <p class="collapse hidden-desc show" id="plenary_4">• Discourse</p>
+                                                            <p class="collapse hidden-desc show" id="plenary_4">•
+                                                                Question and Answers </p>
+                                                            <p class="collapse hidden-desc show" id="plenary_4">• Photo
+                                                                session </p>
                                                         </div>
                                                     </div>
-                                                    <a class="minus-btn" data-bs-toggle="collapse" href="#collapseContent2" role="button" aria-expanded="false" aria-controls="collapseContent2">
+                                                    <a class="minus-btn" data-bs-toggle="collapse" href="#plenary_4" role="button" aria-expanded="false" aria-controls="collapseContent2">
                                                         <div class="plus-icon-2">
                                                             <div class="plus-icon-shape"></div>
                                                         </div>
@@ -882,6 +910,141 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="row g-0 align-items-center shedule-row">
+                                            <div class="col-lg-3 col-12">
+                                                <div class="schedule-thumbnail">
+                                                    <div class="schedule-time">
+                                                        <h3 class="time" style="color: #9F20B6;">Lunch </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-12">
+                                                <div class="schedule-content-wrap">
+                                                    <div class="schedule-content">
+                                                        <h4 class="schedule-title">1:16pm – 2:15pm </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row g-0 align-items-center shedule-row">
+                                            <div class="col-lg-3 col-12">
+                                                <div class="schedule-thumbnail">
+                                                    <div class="schedule-time">
+                                                        <h3 class="time" style="color: #9F20B6;">7</h3>
+                                                        <div class="month-time">
+                                                            <span class="month">Time</span>
+                                                            <span class="duration-event">2:16pm - 3:30pm</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-9 col-12">
+                                                <div class="schedule-content-wrap">
+                                                    <div class="schedule-content">
+                                                        <div class="schedule-location">
+                                                            <p></p>
+                                                        </div>
+                                                        <h4 class="schedule-title">Plenary 5</h4>
+                                                        <h4 class="schedule-title">nsurance Penetration in Nigeria: What are we missing?</h4>
+                                                        <div class="schedule-descrip">
+                                                            <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}" width="80" alt="Thumbnail" class="schedule-thumb-img">
+                                                            <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}" width="80" alt="Thumbnail" class="schedule-thumb-img">
+                                                            <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}" width="80" alt="Thumbnail" class="schedule-thumb-img">
+                                                            <p class="collapse hidden-desc show" id="plenary_5">• Discourse</p>
+                                                            <p class="collapse hidden-desc show" id="plenary_5">•
+                                                                Question and Answers </p>
+                                                            <p class="collapse hidden-desc show" id="plenary_5">• Photo
+                                                                session </p>
+                                                        </div>
+                                                    </div>
+                                                    <a class="minus-btn" data-bs-toggle="collapse" href="#plenary_5" role="button" aria-expanded="false" aria-controls="collapseContent2">
+                                                        <div class="plus-icon-2">
+                                                            <div class="plus-icon-shape"></div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row g-0 align-items-center shedule-row">
+                                            <div class="col-md-3 col-12">
+                                                <div class="schedule-thumbnail">
+                                                    <div class="schedule-time">
+                                                        <h3 class="time" style="color: #9F20B6;">8</h3>
+                                                        <div class="month-time">
+                                                            <span class="month">Time</span>
+                                                            <span class="duration-event">4:00pm – 5:45pm</span>
+                                                        </div>
+                                                    </div>
+                                                    <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
+                                                        width="100" alt="Thumbnail" class="schedule-thumb-img">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 col-12">
+                                                <div class="schedule-content-wrap">
+                                                    <div class="schedule-content">
+                                                        <div class="schedule-location">
+                                                            <p></p>
+                                                        </div>
+                                                        <h4 class="schedule-title">Pre-Awards Cocktail and Network Mixer </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row g-0 align-items-center shedule-row">
+                                            <div class="col-md-3 col-12">
+                                                <div class="schedule-thumbnail">
+                                                    <div class="schedule-time">
+                                                        <h3 class="time" style="color: #9F20B6;">9</h3>
+                                                        <div class="month-time">
+                                                            <span class="month">Time</span>
+                                                            <span class="duration-event">6:00pm – 8:20pm</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 col-12">
+                                                <div class="schedule-content-wrap">
+                                                    <div class="schedule-content">
+                                                        <div class="schedule-location">
+                                                            <p></p>
+                                                        </div>
+                                                        <h4 class="schedule-title">Awards and Gala Night </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row g-0 align-items-center shedule-row">
+                                            <div class="col-md-3 col-12">
+                                                <div class="schedule-thumbnail">
+                                                    <div class="schedule-time">
+                                                        <h3 class="time" style="color: #9F20B6;">10</h3>
+                                                        <div class="month-time">
+                                                            <span class="month">Time</span>
+                                                            <span class="duration-event">8:20pm – 8: 30pm</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 col-12">
+                                                <div class="schedule-content-wrap">
+                                                    <div class="schedule-content">
+                                                        <div class="schedule-location">
+                                                            <p></p>
+                                                        </div>
+                                                        <h4 class="schedule-title">Vote of thanks & Convener’s Closing Remarks </h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row g-0 align-items-center shedule-row">
+                                            <div class="col-lg-3 col-12">
+                                                <div class="schedule-thumbnail">
+                                                    <div class="schedule-time">
+                                                        <h3 class="time" style="color: #9F20B6;">Close </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -890,711 +1053,7 @@
                 </div>
             </div>
         </div>
-    <!-- Schedule Area Start -->
-    <div class="schedule-area section-padding-02 grey-bg">
-        <img src="assets/images/shape/schedule_shape1.png" class="schedule-shape1" alt="Shape1">
-        <img src="assets/images/shape/schedule_shape2.png" class="schedule-shape2" alt="Shape2">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title-wrap">
-                        <div class="section-title text-center">
-                            <h2 class="title">Conference Flow </h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-0 align-items-start">
-                <div class="col-2 sticky-col">
-                    <div class="schedule-side-nav">
-                        <div class="nav d-block nav-pills me-3" id="v-pills-tab" role="tablist"
-                            aria-orientation="vertical">
-                            <p class="nav-link active" id="day-1-tab" data-bs-toggle="pill"
-                                data-bs-target="#v-pills-home" role="tab" aria-controls="v-pills-home"
-                                aria-selected="true">Day 1 September 28</p>
-                            <p class="nav-link" id="day-2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-                                role="tab" aria-controls="v-pills-profile" aria-selected="false">Day 2 September 29
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10">
-                    <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane show active" id="v-pills-home" role="tabpanel">
-                            <div class="schedule-wrapper">
-                                <div class="single-schedule">
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">1</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">08:00 – 10:00am</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}" width="100"
-                                                    alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Civic Centre,
-                                                            Victoria Island, Lagos</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Registration and Verification</h4>
-                                                    <div class="schedule-descrip">
-                                                        <p>Onboarding and verifying registered attendance</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">2</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">10:00am – 10:45am</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}" width="100"
-                                                    alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Civic Centre,
-                                                            Victoria Island, Lagos</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Opening Ceremony </h4>
-                                                    <div class="schedule-descrip">
-                                                        <p>• Key notes</p>
-                                                        <p class="collapse hidden-desc" id="collapseContent2">• Goodwill
-                                                            messages from industry dignitaries and stakeholders </p>
-                                                        <p class="collapse hidden-desc" id="collapseContent2">• Convener’s
-                                                            Welcome </p>
-                                                    </div>
-                                                </div>
-                                                <a class="minus-btn" data-bs-toggle="collapse" href="#collapseContent2"
-                                                    role="button" aria-expanded="false"
-                                                    aria-controls="collapseContent2">
-                                                    <div class="plus-icon-2">
-                                                        <div class="plus-icon-shape"></div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">3</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">10:46am - 11:30am </span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}" width="100"
-                                                    alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Civic Centre,
-                                                            Victoria Island, Lagos</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">The Executive Dialogue | Questions and
-                                                        Answers</h4>
-                                                </div>
-                                                <a class="minus-btn" data-bs-toggle="collapse" href="#collapseContent3"
-                                                    role="button" aria-expanded="false"
-                                                    aria-controls="collapseContent3">
-                                                    <div class="plus-icon-3">
-                                                        <div class="plus-icon-shape"></div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">4</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">11:31am - 11:45am</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}" width="100"
-                                                    alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Civic Centre,
-                                                            Victoria Island, Lagos</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Disruptive Product/Service Demo</h4>
-                                                </div>
-                                                <a class="minus-btn" data-bs-toggle="collapse" href="#collapseContent3"
-                                                    role="button" aria-expanded="false"
-                                                    aria-controls="collapseContent3">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">5</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">11:46 am -1:15 pm</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}" width="100"
-                                                    alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Civic Centre,
-                                                            Victoria Island, Lagos</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Plenary 1 </h4>
-                                                    <div class="schedule-descrip">
-                                                        <h4>Decoupling policy bottlenecks hindering collaborative innovation
-                                                            in insurance </h4>
-                                                        <p>• Pre-panel Presentation</p>
-                                                        <p class="collapse hidden-desc" id="collapseContent2">• Discourse
-                                                        </p>
-                                                        <p class="collapse hidden-desc" id="collapseContent2">• Question
-                                                            and Answers</p>
-                                                        <p class="collapse hidden-desc" id="collapseContent2">• Photo
-                                                            session</p>
-                                                    </div>
-                                                </div>
-                                                <a class="minus-btn" data-bs-toggle="collapse" href="#collapseContent2"
-                                                    role="button" aria-expanded="false"
-                                                    aria-controls="collapseContent2">
-                                                    <div class="plus-icon-2">
-                                                        <div class="plus-icon-shape"></div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">Lunch </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <h4 class="schedule-title">1:15pm – 2:15pm </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">6</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">2:16pm – 2:30pm</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
-                                                    width="100" alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Civic Centre,
-                                                            Victoria Island, Lagos</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Disruptive Product/Service Demo (2) </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">7</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">2:31pm – 3:30pm</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
-                                                    width="100" alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Civic Centre,
-                                                            Victoria Island, Lagos</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Plenary</h4>
-                                                    <div class="schedule-descrip">
-                                                        <h4>Leveraging Insurtech in advancing innovative product
-                                                            development, customer acquisition, engagement and retention
-                                                        </h4>
-                                                        <p class="collapse hidden-desc" id="collapseContent2">• Discourse
-                                                        </p>
-                                                        <p class="collapse hidden-desc" id="collapseContent2">• Question
-                                                            and Answers</p>
-                                                        <p class="collapse hidden-desc" id="collapseContent2">• Photo
-                                                            session</p>
-                                                    </div>
-                                                </div>
-                                                <a class="minus-btn" data-bs-toggle="collapse" href="#collapseContent2"
-                                                    role="button" aria-expanded="false"
-                                                    aria-controls="collapseContent2">
-                                                    <div class="plus-icon-2">
-                                                        <div class="plus-icon-shape"></div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">8</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">3:31pm – 3:55pm</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
-                                                    width="100" alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Civic Centre,
-                                                            Victoria Island, Lagos</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Announcements, summary, and day (2) line-up
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">Close </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <h4 class="schedule-title">4:00pm</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="v-pills-profile" role="tabpanel">
-                            <div class="schedule-wrapper">
-                                <div class="single-schedule">
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">1</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">8:00am – 10:00am</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
-                                                    width="100" alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Civic Centre,
-                                                            Victoria Island, Lagos</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Registration and Verification </h4>
-                                                </div>
-                                                <a class="minus-btn" data-bs-toggle="collapse" href="#collapseContent4"
-                                                    role="button" aria-expanded="false"
-                                                    aria-controls="collapseContent4">
-                                                    <div class="plus-icon-1 active">
-                                                        <div class="plus-icon-shape active-plus"></div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">2</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">9:00am – 10:15am</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
-                                                    width="100" alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Civic Centre,
-                                                            Victoria Island, Lagos</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">IMT Special in collaboration with PILA :
-                                                        Overcoming: Women in Insurance and Insurtech </h4>
-                                                </div>
-                                                <a class="minus-btn" data-bs-toggle="collapse" href="#collapseContent5"
-                                                    role="button" aria-expanded="false"
-                                                    aria-controls="collapseContent5">
-                                                    <div class="plus-icon-2">
-                                                        <div class="plus-icon-shape"></div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">3</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">10:16am – 10:30am</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
-                                                    width="100" alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Civic Centre,
-                                                            Victoria Island, Lagos</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Disruptive product/service Demo </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-md-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">4</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">10:31am – 11:45am</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
-                                                    width="100" alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Monthon city
-                                                            hall, New York</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Plenary 3</h4>
-                                                    <div class="schedule-descrip">
-                                                        <h4>Insurance Brokerage: Leveraging Tech in the Ultra-Digital Age
-                                                        </h4>
-                                                        <p>• Discourse</p>
-                                                        <p class="collapse hidden-desc show" id="collapseContent7">•
-                                                            Question and Answers </p>
-                                                        <p class="collapse hidden-desc show" id="collapseContent7">• Photo
-                                                            session </p>
-                                                    </div>
-                                                </div>
-                                                <a class="minus-btn" data-bs-toggle="collapse" href="#collapseContent7"
-                                                    role="button" aria-expanded="false"
-                                                    aria-controls="collapseContent7">
-                                                    <div class="plus-icon-1 active">
-                                                        <div class="plus-icon-shape active-plus"></div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-md-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">5</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">11:46am – Noon</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
-                                                    width="100" alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Monthon city
-                                                            hall, New York</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Disruptive product/service Demo </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-md-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">6</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">12: 01pm – 1:15pm</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
-                                                    width="100" alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Monthon city
-                                                            hall, New York</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Plenary 4</h4>
-                                                    <div class="schedule-descrip">
-                                                        <h4>Internet of Things (IOT), HMOs and accessible healthcare for
-                                                            Nigerian</h4>
-                                                        <p>• Discourse</p>
-                                                        <p class="collapse hidden-desc show" id="collapseContent7">•
-                                                            Question and Answers </p>
-                                                        <p class="collapse hidden-desc show" id="collapseContent7">• Photo
-                                                            session </p>
-                                                    </div>
-                                                </div>
-                                                <a class="minus-btn" data-bs-toggle="collapse" href="#collapseContent7"
-                                                    role="button" aria-expanded="false"
-                                                    aria-controls="collapseContent7">
-                                                    <div class="plus-icon-1 active">
-                                                        <div class="plus-icon-shape active-plus"></div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">Lunch </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <h4 class="schedule-title">1:16pm – 2:15pm </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-md-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">7</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">2:16pm - 3:30pm</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
-                                                    width="100" alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Monthon city
-                                                            hall, New York</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Plenary 5</h4>
-                                                    <div class="schedule-descrip">
-                                                        <h4>Insurance Penetration in Nigeria: What are we missing?</h4>
-                                                        <p>• Lead Presentation</p>
-                                                        <p class="collapse hidden-desc show" id="collapseContent7">•
-                                                            Discourse </p>
-                                                        <p class="collapse hidden-desc show" id="collapseContent7">•
-                                                            Question and Answers </p>
-                                                        <p class="collapse hidden-desc show" id="collapseContent7">• Photo
-                                                            session </p>
-                                                    </div>
-                                                </div>
-                                                <a class="minus-btn" data-bs-toggle="collapse" href="#collapseContent7"
-                                                    role="button" aria-expanded="false"
-                                                    aria-controls="collapseContent7">
-                                                    <div class="plus-icon-1 active">
-                                                        <div class="plus-icon-shape active-plus"></div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-md-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">8</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">4:00pm – 5:45pm</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
-                                                    width="100" alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Monthon city
-                                                            hall, New York</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Pre-Awards Cocktail and Network Mixer </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-md-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">9</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">6:00pm – 8:20pm</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
-                                                    width="100" alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Monthon city
-                                                            hall, New York</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Awards and Gala Night </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-md-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">10</h3>
-                                                    <div class="month-time">
-                                                        <span class="month">Time</span>
-                                                        <span class="duration-event">8:20pm – 8: 30pm</span>
-                                                    </div>
-                                                </div>
-                                                <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}"
-                                                    width="100" alt="Thumbnail" class="schedule-thumb-img">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-9 col-12">
-                                            <div class="schedule-content-wrap">
-                                                <div class="schedule-content">
-                                                    <div class="schedule-location">
-                                                        <p><span><i class="fas fa-map-marker-alt"></i> </span>Monthon city
-                                                            hall, New York</p>
-                                                    </div>
-                                                    <h4 class="schedule-title">Vote of thanks & Convener’s Closing Remarks
-                                                    </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-0 align-items-center shedule-row">
-                                        <div class="col-lg-3 col-12">
-                                            <div class="schedule-thumbnail">
-                                                <div class="schedule-time">
-                                                    <h3 class="time">Close </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Schedule Area End -->
+    <!-- Schedule Area end -->
 
     <!-- Brand Area Start -->
     {{-- <div class="brand-area section-padding-05">
