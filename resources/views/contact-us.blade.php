@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Contact')
+
 @section('content')
 <div class="section exvent-hero-section d-lg-flex d-block align-items-center inner-page-hero" style="background-image: url(assets/images/bg/about_page_bg.jpg);">
     <img class="shape-1 img-fluid" src="assets/images/shape/hero_shape1.png" alt="">

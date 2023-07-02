@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'About')
+
 @section('content')
 <!-- Hero Start -->
 <div class="section exvent-hero-section d-lg-flex d-block align-items-center inner-page-hero" style="background-image: url(assets/images/bg/about_page_bg.jpg);">
