@@ -69,7 +69,7 @@
                     <div class="header-menu d-none d-lg-block">
                         <ul class="main-menu">
                             <li><a href="about.html">About</a></li>
-                            <li><a href="about">Why Attend</a></li>
+                            <li><a href="why_attend">Why Attend</a></li>
                             <li><a href="#">Sponsorship Benefits</a></li>
                             <li><a href="#">Contact</a></li>
                             @auth

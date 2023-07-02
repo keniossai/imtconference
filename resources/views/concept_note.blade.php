@@ -25,7 +25,7 @@
 
         <!-- About Area Start -->
         <div class="about-section about-page section-padding-03" style="background: #f1f3ff;">
-            
+
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -126,25 +126,25 @@
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="accordion_3">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                Can i use for free ?
+                                                Engaging Keynote Presentations
                                             </button>
                                         </h2>
                                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="accordion_3" data-bs-parent="#faq_accordion">
                                             <div class="accordion-body">
-                                                <p>We’re inviting the top creatives in the tech industry from all over the world to come learn, <br> grow, scrape their knees.</p>
+                                                <p>Join a lineup of world-class speakers, renowned experts, and thought-provoking visionaries on the IMT 2.0 stage! Gain exclusive insights into emerging technologies, industry trends, and transformative strategies that are reshaping the insurance landscape. </p>
+                                                <p>Discover the latest breakthroughs, success stories, and best practices from leading organisations at the forefront of the insurance technology revolution. Prepare to be inspired, motivated, and armed with the knowledge to drive meaningful change within your own organisation. All these and more at IMT 2.0!</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="accordion_4">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                Engaging Keynote Presentations
+                                                Cutting-Edge Exhibits and Demonstrations
                                             </button>
                                         </h2>
                                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="accordion_4" data-bs-parent="#faq_accordion">
                                             <div class="accordion-body">
-                                                <p>Join a lineup of world-class speakers, renowned experts, and thought-provoking visionaries on the IMT 2.0 stage! Gain exclusive insights into emerging technologies, industry trends, and transformative strategies that are reshaping the insurance landscape. </p>
-                                                <p>Discover the latest breakthroughs, success stories, and best practices from leading organisations at the forefront of the insurance technology revolution. Prepare to be inspired, motivated, and armed with the knowledge to drive meaningful change within your own organisation. All these and more at IMT 2.0!</p>
+                                                <p>Step into the vibrant IMT exhibition arena, buzzing with activity and brimming with the latest advancements in insurtech. Immerse yourself in hands-on demonstrations of groundbreaking solutions that are revolutionising the way insurance is underwritten, sold, and serviced. Interact with industry-leading vendors and solution providers, and gain firsthand experience with state-of-the-art products and services that can optimise your operations, enhance customer experience, and boost your bottom line.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -157,5 +157,5 @@
             </div>
         </div>
         <!-- About Area End -->
-
+        <x-login-footer />
 @endsection
