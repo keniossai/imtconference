@@ -43,6 +43,8 @@
                     <div class="contact-info">
                         <h4 class="contact-label">Phone</h4>
                         <a href="tel:+2347039363184" class="address">+234 7039 363 184</a>
+                        <br>
+                        <a href="tel:+2349022222226" class="address">+234 9022 222 226</a>
                     </div>
                 </div>
                 <div class="single-contact">
