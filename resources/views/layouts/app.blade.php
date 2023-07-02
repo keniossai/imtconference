@@ -71,7 +71,7 @@
                             <li><a href="about">About</a></li>
                             <li><a href="why_attend">Why Attend</a></li>
                             <li><a href="#">Sponsorship Benefits</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="contact-us">Contact</a></li>
                             @auth
                                 <li>
                                     <a href="blog.html">
@@ -139,7 +139,7 @@
                         <li><a href="about">About</a></li>
                         <li><a href="why_attend">Why Attend</a></li>
                         <li><a href="#">Sponsorship Benefits</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact-us">Contact</a></li>
                         @auth
                             <li>
                                 <a href="blog.html">
