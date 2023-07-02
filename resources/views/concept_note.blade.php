@@ -1,144 +1,161 @@
 
-
-
 @extends('layouts.app')
 
-@section('title', 'The Concept Note')
+@section('title', 'About')
 
 @section('content')
 
-    <x-banner title="The Concept Note" :meta="[
-        'image'    => asset('images/banner/F69A9237.jpg'),
-        'url'      => route('home'),
-        'prevPage' => 'Home',
-    ]" />
 
-<section class="main-container pb-0" id="main-container">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <div class="blog-details">
-                    <div class="entry-header">
-                        <h2 class="entry-title text-center">
-                            <a href="#">THE NBA ANNUAL GENERAL CONFERENCE 2020: CONCEPT FRAMEWORK NOTE</a>
-                        </h2>
-                    </div><!-- header end -->
-                    <div class="post-media post-image text-center">
-                        <img class="img-fluid" src="{{ asset('images/banner/IMG_9723.jpg') }}" alt="">
-                    </div>
-                    <div class="post-content post-single">
-                        <div class="post-body clearfix">
-                            <div class="entry-content">
-                                <h3>Conference Objective</h3>
-                                <p>
-                                    <b>1.</b> With  an  average  attendance  of more  than  12,000  people,  (rising  this year  perhaps  to  some 20,000 professionals),  the  Nigerian  Bar  Association (NBA)  Annual General  Conference  (AGC) represents one of the largest singular gathering of lawyers anywhere in the world.
-                                </p>
-                                <p>
-                                    <b>2.</b> The  core  objective of  the  60th edition of  the  NBA  AGC  is  to  host a  world class  international conference,  with  in-depth  discourse  stirred  by a wealth  of unparalleled  experience,  aimed at proliferating  the  knowledge,  skills  and  inspiration  bequeathed  in  past  NBA  Conferences,  to improve our lot in Africa, build legacy law firms, shape subsequent generations of the African Bar, and more importantly, reposition the Bar to play its critical role in economic and socio-political development on national and continental trade frontiers.
-                                </p>
-                                <p>
-                                    <b>3.</b>The  world  continues  to  contend  with  COVID-19  and  the  far-reaching  healthcare,  social,  and economic implications of the pandemic. We have all been forced to adapt to a new normal and as we learn to navigate our current reality, it must of course follow that the NBA –as the face of  our  esteemed  profession –demonstrates  its  readiness  and  capacity  to  spearhead  this transition.
-                                </p>
-                                <p>
-                                    <b>4.</b> Our  focus  will  be  to  forge  ahead  of  the  current  inhibitions  in  all  ramifications.  We  are  not unmindful of the current national frame stemming from the pandemic; bereavements, health concerns, insecurities in varied facets and recession. Our conference will thus be focused on weathering but also stepping over and ahead of these concerns and will thus speak virtually to the  essence,without  flounce,  as  we  take  account  of  the  economic  recession  we  are  in,  the economic and public health insecurity face; coupled with the bereavement and pain our brethren suffer.
-                                </p>
-                                <p>
-                                    <b>5.</b> We have decided to step forward and have a conference that would shine a light in the darkness and  gloom  that  COVID-19  has  brought  upon  us  all.  It  is  abundantly  clear  that  a  physical conference for this year is out of the question,but no matter, we are shifting gears, stepping forward and looking to the future, with an overarching aim to restore hope and show a path to success in these trying times. As the fear of the disease continues, there lies in some quarters a greater fear for the economy and survival after COVID-19. We have only one true choice: we must begin to plan the future beyond COVID-19, NOW
-                                </p>
+        <!-- Hero Start -->
+        <div class="section exvent-hero-section d-lg-flex d-block align-items-center inner-page-hero" style="background-image: url(assets/images/bg/about_page_bg.jpg);">
+            <img class="shape-1 img-fluid" src="assets/images/shape/hero_shape1.png" alt="">
+            <img class="shape-2 img-fluid" src="assets/images/shape/hero_shape2.png" alt="">
 
-                                <p>
-                                    <b>6.</b> Consequently, our commitment to this is aptly symbolized in the organization and execution of the first Virtual Annual General Conference of the NBA. We must unearth opportunities and shed light in the dark tunnel of the past dug deeper and made longer by COVID-19.
-                                </p>
-                                <p>
-                                    <b>7.</b> We have thus determined that this year, apart from the novel form factor which the conference is to take, the conference in its substance will also be different from the norm. This year there
-                                    will be a celebration –not of fanfare and pageantry, but by marking it with something that is relevant, and contemplates the future; of the NBA, and of its members
-                                </p>
-                                <p>
-                                    <b>8.</b> Central to the NBA is the rule of law. These are matters that go to the essence of our Bar, the IBA and many Bar Associations around the world: the commitment to the rule of law –fighting injustice, abuse of power and state terrorism and government brutality in the various guises they come. It is of utmost importance for the NBA that we are shown to be clear in our stand against these injustices as they unfortunately continue to be perpetuated
-                                </p>
-
-                                <p>
-                                    <b>9.</b> Ultimately, we are presented in these unusual times with a unique opportunity to step forward to take the lead, and to front line the cause and direction for a bar and Nation that are not bound by the past, but instead takes its lessons as they look to the future. According to George Elliot: <i>“We cannot predict the future, but we can create it.”</i>
-                                </p>
-
-
-                                <h3>Conference Theme–Step Forward</h3>
-
-
-                                <p>
-                                    <b>10.</b> In keeping with our need to break new grounds at age 60, we had envisaged the need to be ahead and prepared for ‘next tomorrow’ in selecting the theme, even without knowledge of the oncoming pandemic and the consequential impact that it would have nationally and globally. The theme is thus timely.
-                                </p>
-
-
-                                <p>
-                                    <b>11.</b> Our theme is even more fitting as in these times, there is a continuing need step forward and to show initiative, show leadership, and show foresight. This year’s conference will centre all the ways in which we can do these, even as we navigate our new normal, and prepare (as much as is possible) for a post COVID-19 world
-                                </p>
-
-
-                                <h3>Conference Date & Registration</h3>
-                                <p>
-                                    <b>12.</b> The conference will hold between <b> August 26 -27 August 2020. </b> As this year’s conference represents innovation and is scheduled to be completely virtual, the NBA is also rising to the challenges of the times with innovation to conference registration.The registration for this year’s conference shall therefore be free of cost for all conferees
-                                </p>
-
-                                <h3>Conference Structure</h3>
-                                <div>
-                                    <p>
-                                        <b>13.</b> The conference structure includes:
-                                    </p>
-                                    <div class="pl-5">
-                                        <p>
-                                            <b>1.</b>
-                                            An opening and closing Plenary session/interactive panel with Q&As from the floor:
-                                        </p>
-                                        <div class="pl-5">
-                                            <ul>
-
-                                                <li>plenary sessions, on the State of the Nation and on the Rule of Law with panellists drawn from State representatives and the heads of the three arms of government, past and present world leaders, legal icons, heads of global agencies, key subject matter experts and civil society; and</li>
-                                                <li>A  “Through  the  years  with  the  NBA”  showcasing  the  contributions  of  the  Bar Association through epoch making events in our Nation’s history, with a stimulating exchange between the past and present leadership of the NBA</li>
-                                            </ul>
-
-
-                                        </div>
-                                        <br>
-                                        <p>
-                                            <b>2.</b> Keynote Addresses on topical issues affecting continent, country and the Bar by world renowned leaders who have been successful change creators and agents;
-                                        </p>
-                                        <p>
-                                            <b>3.</b> A monumental Debate on our courts of yesterday, today and the future by leading local and international legal icons;
-                                        </p>
-                                        <p>
-                                            <b>4.</b> Specialised subject-matter oriented sessions hosted by the different sections and fora of the NBA focusing on business law, legal practice, public interest, gender issues and young lawyers;
-                                        </p>
-                                        <p>
-                                            <b>5.</b> Thematic sessions focusing on the priority themes to discuss the challenges, gaps and recommendations  related  to  raising  the  standard  of  the  Bar  and  the  lot  of  legal practitioners in the country
-                                        </p>
-                                        <p>
-                                            <b>6.</b> A focus on ‘What’s Next’ with the hosting of parallel sessions on strategies for improving the business and the practice of law in Nigeria under the prevailing global circumstances;
-                                        </p>
-                                        <p>
-                                            <b>7.</b> Innovative  Solutions  Sessions  to  discuss  examples  of  promising  and  innovative practices; Technical Training sessions for lawyers; and
-                                        </p>
-
-                                        <p>
-                                            <b>8.</b> Social Sessions to foster bonding and mentoring between bar leaders and millennials.
-                                        </p>
-
-                                    </div>
-
-
-                                </div>
-                            </div>
+            <div class="container">
+                <div class="row exvent-hero-row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <div class="page-title">
+                            <h2 class="section-title">Why Attend</h2>
                         </div>
-                        <!-- post-body end-->
                     </div>
-                    <!-- Post content end-->
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Container end-->
-</section>
+        <!-- Hero End -->
 
+        <!-- About Area Start -->
+        <div class="about-section about-page section-padding-03" style="background: #f1f3ff;">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-title mt-5">
+                            {{-- <h5 class="sub-title orange">Turning potential into reality</h5> --}}
+                            <h2 class="title">Why Attend <br> Insurance Meets Tech 2.0</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="about-right-content">
+                            <div class="section-paragraph">
+                                <h5 class="sub-title orange">Turning potential into reality</h5>
+                                <p>Africa boasts a multi-billion-dollar Insurance Industry with the potential
+                                     to reach $68 Billion in GWP if we collectively optimise resources, and unlock
+                                      new strategies in deepening penetration and customer engagement.
+                                </p>
+                                <p>Join us for the highly anticipated Insurance Meets Tech 2.0, the premier trade show that is steadily turning the corner in Nigeria’s insurance and Insurtech space!</p>
+                            </div>
+                            <div class="about-btn">
+                                <a class="btn btn-orange" href="{{ route('register') }}">Register now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- <div class="row g-0 mt-5">
+                    <div class="col-lg-7 order-lg-1 order-2">
+                        <div class="about-thumb-wrap">
+                            <img src="assets/images/about_page_img.jpg" alt="about_img1">
 
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-lg-1 order-1">
+                        <div class="about-content-wrap">
+                            <img src="assets/images/shape/about_content_shape1.png" alt="shape" class="about-box-shape">
+                            <img src="assets/images/shape/about_shape1.png" alt="shape x" class="about-shape-x">
+                            <div class="section-title">
+                                <h5 class="sub-title orange">Why attend event</h5>
+                                <h2 class="title">Great opportunity to develop you</h2>
+                            </div>
+                            <div class="about-item">
+                                <img src="assets/images/about_icon_1.png" alt="Thumb" class="icon">
+                                <div class="about-item-content">
+                                    <h5 class="item-heading">3 Days Workshops</h5>
+                                    <p class="item-description">We’re inviting the top creatives in the tech industry from all over the world .</p>
+                                </div>
+                            </div>
+                            <div class="about-item">
+                                <img src="assets/images/about_icon_2.png" alt="Thumb" class="icon">
+                                <div class="about-item-content">
+                                    <h5 class="item-heading">3 Days Workshops</h5>
+                                    <p class="item-description">We’re inviting the top creatives in the tech industry from all over the world .</p>
+                                </div>
+                            </div>
+                            <div class="about-item">
+                                <img src="assets/images/about_icon_3.png" alt="Thumb" class="icon">
+                                <div class="about-item-content">
+                                    <h5 class="item-heading">3 Days Workshops</h5>
+                                    <p class="item-description">We’re inviting the top creatives in the tech industry from all over the world .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> --}}
+                <div class="faq-area section-padding-06">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="accordion accordion-flush" id="faq_accordion">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="accordion_1">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                Explore the Power of Innovation in the Insurtech and Insurance sub-sectors
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="accordion_1" data-bs-parent="#faq_accordion" style="">
+                                            <div class="accordion-body">
+                                                <p>At IMT 2.0, you are set to discover the latest trends, breakthroughs, and innovations that are shaping the
+                                                    future of the industry. Witness firsthand how disruptive technologies like artificial intelligence, blockchain,
+                                                    and IoT are transforming insurance as we know it. Get inspired by thought leaders and visionaries who are driving change,
+                                                    and learn how you can harness these advancements to stay ahead of the curve.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="accordion_2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Unparalleled Networking Opportunities
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="accordion_2" data-bs-parent="#faq_accordion">
+                                            <div class="accordion-body">
+                                                <p>Connect with a diverse community of insurance C-suites, professionals, tech enthusiasts, sector decision-makers, policymakers, regulators, and industry influencers from around the region. It’s the full stakeholder chain, friends!</p>
+                                                <p>Insurance Meets Tech 2.0 provides an unmatched platform to forge valuable connections, exchange ideas, and foster collaborations that will propel your career or business to new heights. </p>
+                                                <p>Engage in lively discussions, share your insights, and build relationships with like-minded individuals who share your passion for innovation.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="accordion_3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Can i use for free ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="accordion_3" data-bs-parent="#faq_accordion">
+                                            <div class="accordion-body">
+                                                <p>We’re inviting the top creatives in the tech industry from all over the world to come learn, <br> grow, scrape their knees.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="accordion_4">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                Engaging Keynote Presentations
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="accordion_4" data-bs-parent="#faq_accordion">
+                                            <div class="accordion-body">
+                                                <p>Join a lineup of world-class speakers, renowned experts, and thought-provoking visionaries on the IMT 2.0 stage! Gain exclusive insights into emerging technologies, industry trends, and transformative strategies that are reshaping the insurance landscape. </p>
+                                                <p>Discover the latest breakthroughs, success stories, and best practices from leading organisations at the forefront of the insurance technology revolution. Prepare to be inspired, motivated, and armed with the knowledge to drive meaningful change within your own organisation. All these and more at IMT 2.0!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Area End -->
 
 @endsection
