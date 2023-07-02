@@ -26,7 +26,7 @@
 
     <!-- Icon Font CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/plugins/all.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/flaticon.css') }}">
 
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
