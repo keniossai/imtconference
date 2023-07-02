@@ -39,7 +39,7 @@
                 </span>
                     <div class="contact-info">
                         <h4 class="contact-label">Our Location : </h4>
-                        <p class="address">925 4th Ave #2300, Seattle,<br> WA 98104, United States of <br> America</p>
+                        <p class="address">Ozumba Mbadiwe Road, Opposite 1004,<br> Victoria Island 100001, Lagos</p>
                     </div>
                 </div>
                 <div class="single-contact">
@@ -47,8 +47,8 @@
                     <i class="flaticon-phone-call"></i>
                 </span>
                     <div class="contact-info">
-                        <h4 class="contact-label">24/7 Hotline</h4>
-                        <a href="tel:+4581236572324" class="address">+458 123 657 2324</a>
+                        <h4 class="contact-label">Phone</h4>
+                        <a href="tel:+2347039363184" class="address">+234 7039 363 184</a>
                     </div>
                 </div>
                 <div class="single-contact">
@@ -57,21 +57,20 @@
                 </span>
                     <div class="contact-info">
                         <h4 class="contact-label">Email :</h4>
-                        <a href="mailto:exvent.hot@gmail.com" class="address">exvent.hot@gmail.com</a>
+                        <a href="mailto:office@insurancemeetstech.com" class="address">office@insurancemeetstech.com</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="map-section">
                     <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2690.050470195108!2d-122.33544524845432!3d47.60570829593006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906ab11ece62e1%3A0x505ca4dd7ac12cfa!2s925%204th%20Ave%20%232300%2C%20Seattle%2C%20WA%2098104%2C%20USA!5e0!3m2!1sen!2sbd!4v1669805610005!5m2!1sen!2sbd" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126868.53600487554!2d3.2784439972656183!3d6.440031500000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf4d81513cf8f%3A0x3cc9ebc0a31cc055!2sThe%20Civic%20Centre!5e0!3m2!1sen!2sng!4v1688316295999!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Contact Form Start -->
-        
-        <!-- Contact Form End -->
     </div>
 </div>
+
+<x-login-footer />
 @endsection

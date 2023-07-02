@@ -1,12 +1,12 @@
 <!-- Footer Section Start -->
     <div class="footer-section" style="background-image: url(assets/images/bg/footer_bg1.jpg);">
-    
+
         <div class="footer-widget-social">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-12">
                         <div class="social-title">
-                            <h4 class="title">Contact With us</h4>
+                            <h4 class="title">Connect With Us</h4>
                         </div>
                     </div>
                     <div class="col-12">

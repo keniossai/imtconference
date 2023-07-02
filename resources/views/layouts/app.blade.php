@@ -70,6 +70,7 @@
                         <ul class="main-menu">
                             <li><a href="about">About</a></li>
                             <li><a href="why_attend">Why Attend</a></li>
+                            <li><a href="#">Speakers</a></li>
                             <li><a href="#">Sponsorship Benefits</a></li>
                             <li><a href="contact-us">Contact</a></li>
                             @auth
@@ -138,6 +139,7 @@
                         <li><a href="/">Home</a></li>
                         <li><a href="about">About</a></li>
                         <li><a href="why_attend">Why Attend</a></li>
+                        <li><a href="#">Speakers</a></li>
                         <li><a href="#">Sponsorship Benefits</a></li>
                         <li><a href="contact-us">Contact</a></li>
                         @auth
