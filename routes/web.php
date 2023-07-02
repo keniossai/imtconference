@@ -38,6 +38,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::view('/cards/create',    'cards.create')->name('cardse.create');
 Route::post('/generate',        [CardController::class, 'generate'])->name('generate');
 Route::view('/why_attend',    'concept_note')->name('concept-note');
+Route::view('/about',    'about')->name('about');
 Route::view('/privacy-policy',  'privacy_policy')->name('privacy-policy');
 Route::view('/exhibition',  'exhibition')->name('home.exhibition');
 
