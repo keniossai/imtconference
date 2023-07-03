@@ -26,7 +26,7 @@
                 <div class="row text-center">
                     <div class="col-12">
                         <div class="social-title">
-                            <h4 class="title">Contact With us</h4>
+                            <h4 class="title">Follow The Conversation</h4>
                         </div>
                     </div>
                     <div class="col-12">
