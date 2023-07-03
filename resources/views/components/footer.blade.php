@@ -46,10 +46,10 @@
                         <div class="footer-navigation">
                             <ul>
                                 <li><a href="/">Home</a></li>
-                                <li><a href="#">About Us</a></li>
+                                <li><a href="about">About</a></li>
                                 <li><a href="#">Sponsors</a></li>
                                 <li><a href="#">Schedule</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="contact-us">Contact</a></li>
                             </ul>
                         </div>
                     </div>

@@ -406,7 +406,7 @@
                                                 <div class="schedule-content-wrap">
                                                     <div class="schedule-content">
                                                         <div class="schedule-location">
-                                                            <p><span><i class="fas fa-map-marker-alt"></i> </span>Monthon city hall, New York</p>
+                                                            <p></p>
                                                         </div>
                                                         <h4 class="schedule-title">Registration and Verification</h4>
                                                         <div class="schedule-descrip">
@@ -687,8 +687,7 @@
                                                 <div class="schedule-content-wrap">
                                                     <div class="schedule-content">
                                                         <div class="schedule-location">
-                                                            <p><span><i class="fas fa-map-marker-alt"></i> </span>Civic Centre,
-                                                                Victoria Island, Lagos</p>
+                                                            <p></p>
                                                         </div>
                                                         <h4 class="schedule-title">Announcements, summary, and day (2) line-up
                                                         </h4>
@@ -945,7 +944,7 @@
                                                             <p></p>
                                                         </div>
                                                         <h4 class="schedule-title">Plenary 5</h4>
-                                                        <h4 class="schedule-title">nsurance Penetration in Nigeria: What are we missing?</h4>
+                                                        <h4 class="schedule-title">Insurance Penetration in Nigeria: What are we missing?</h4>
                                                         <div class="schedule-descrip">
                                                             <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}" width="80" alt="Thumbnail" class="schedule-thumb-img">
                                                             <img src="{{ cloudinary_url('imt/gallery/thumb_m9sran') }}" width="80" alt="Thumbnail" class="schedule-thumb-img">
