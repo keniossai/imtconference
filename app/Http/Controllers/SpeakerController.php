@@ -8,14 +8,19 @@ class SpeakerController extends Controller
 {
     public function index()
     {
-        $speakers  = Speaker::orderByDesc('is_key')->simplePaginate(16);
+        // $speakers  = Speaker::orderByDesc('is_key')->simplePaginate(16);
 
-        return view('speakers.index', compact('speakers'));
+        return view('speakers.index');
+    }
+
+    public function create()
+    {
+        //
     }
 
 
     public function show(Speaker $speaker)
     {
-        return view('speakers.show', compact('speaker'));
+        return view('speakers.show');
     }
 }
