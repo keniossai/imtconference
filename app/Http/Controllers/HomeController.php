@@ -13,7 +13,7 @@ class HomeController extends Controller
         //     ->limit(8)
         //     ->get());
 
-        // $speakers = Speaker::get();
+        $speakers = Speaker::get();
 
         return view('home', compact('speakers'));
     }

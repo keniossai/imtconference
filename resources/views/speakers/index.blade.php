@@ -143,7 +143,7 @@
                     <div class="col-lg-3 col-md-6 speaker-col">
                         <div class="single-speaker">
                             <a href="speaker-single.html" class="speaker-thumbnail">
-                                <img src="assets/images/speaker/speaker_rounded_1.jpg" alt="Speaker 1" class="speaker-img">
+                                <img src="{{ asset("speaker/$speaker->image") }}" alt="Speaker 1" width="202" height="202" class="speaker-img">
                             </a>
                             <div class="speaker-details">
                                 <div class="heading-shape">
@@ -154,7 +154,7 @@
                                 <a href="speaker-single.html" class="speaker-name-link">
                                     <h4 class="speaker-name">{{ $speaker->name }}</h4>
                                 </a>
-                                <p class="speaker-designation">Career Expert</p>
+                                <p class="speaker-designation">{{ $speaker->designation }}</p>
                             </div>
                         </div>
                     </div>
