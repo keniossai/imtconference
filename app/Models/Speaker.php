@@ -17,17 +17,17 @@ class Speaker extends Model
     protected $guarded = [];
 
 
-    public function getRouteKeyName()
-    {
-        return 'slug';
-    }
+    // public function getRouteKeyName()
+    // {
+    //     return 'slug';
+    // }
 
 
-    function photo()
-    {
-        return cloudinary_url($this->photo, [
-            "gravity" => "face", "height" => 400, "width" => 400, "crop" => "fill"
-        ]);
-    }
+    // function photo()
+    // {
+    //     return cloudinary_url($this->photo, [
+    //         "gravity" => "face", "height" => 400, "width" => 400, "crop" => "fill"
+    //     ]);
+    // }
 
 }

@@ -13,14 +13,10 @@ class SpeakerController extends Controller
         return view('speakers.index');
     }
 
-    public function create()
-    {
-        //
-    }
-
 
     public function show(Speaker $speaker)
     {
         return view('speakers.show');
     }
+
 }

@@ -17,21 +17,19 @@ return new class extends Migration
             $table->engine = 'InnoDB';
 
             $table->id();
-            $table->string('name');
-            $table->string('slug');
-            $table->string('email')->nullable()->unique();
-            $table->string('phone')->nullable()->unique();
+            $table->string('title');
+            $table->string('name')->unique();
+            $table->string('designation')->nullable();
+            $table->string('organization')->nullable();
+            $table->string('slug')->nullable();
             $table->text('bio')->nullable();
-            $table->text('designation')->nullable();
             $table->enum('gender', ['M', 'F'])->nullable();
-            $table->string('photo')->nullable();
-            $table->boolean('is_key')->default(false);
-            $table->tinyInteger('position')->default(1);
+            $table->string('image')->nullable();
 
             $table->timestamps();
 
-            $table->foreignId('created_by')->nullable()->constrained('users');
-            $table->foreignId('updated_by')->nullable()->constrained('users');
+
+            // $table->fullText(['first_name', 'last_name', 'middle_name', 'bio', 'designation', 'organization']);
         });
     }
 

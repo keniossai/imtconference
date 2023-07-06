@@ -16,6 +16,7 @@ use App\Http\Controllers\VerificationController;
 use App\Http\Controllers\PaystackWebhookController;
 use App\Http\Controllers\SpeakerController;
 use App\Http\Controllers\CardController;
+use App\Http\Controllers\PostsController;
 use App\Models\Transaction;
 use Illuminate\Support\Facades\Route;
 
@@ -72,8 +73,15 @@ Route::middleware('auth')->group(function () {
     Route::get('/transactions/{transaction}/pay', TransactionPayController::class)->name('transactions.pay');
     Route::get('/dashboards',        [NbaDashboardController::class, 'index'])->name('dashboard.nba');
 
+    Route::get('/dashboard/posts', [PostsController::class, 'index'])->name('posts.index');
+    Route::post('/dashboard/posts', [PostsController::class, 'store'])->name('posts.store');
+
     Route::middleware('admin')->group(function () {
         Route::get('/dashboard',        [DashboardController::class, 'index'])->name('dashboard');
+        Route::get('/dashboard/speakers',        [DashboardController::class, 'speakers'])->name('dashboard.speakers');
+        Route::post('/dashboard/speakers',        [DashboardController::class, 'store'])->name('speaker.store');
+        // Route::get('speaker/{id}/edit',        [DashboardController::class, 'edit']);
+        Route::delete('speakers/{id}/delete',        [DashboardController::class, 'destroy'])->name('dashboard.destroy');
         Route::get('/payments',         [PaymentController::class, 'index'])->name('payments.index');
         Route::get('/registration-download', RegistrationDownloadController::class)->name('registration-download');
 
