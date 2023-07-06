@@ -1405,7 +1405,7 @@ textarea:-ms-input-placeholder {
 
 .header-menu .main-menu li {
   position: relative;
-  padding: 30px 15px;
+  padding: 30px 25px;
 }
 
 @media only screen and (max-width: 1199px) {

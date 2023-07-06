@@ -68,11 +68,18 @@
 
                     <div class="header-menu d-none d-lg-block">
                         <ul class="main-menu">
+                            <li><a href="#">News</a>
+                                <ul class="sub-menu">
+                                    <li><a href="{{ route('blog') }}">Press Release</a></li>
+                                    {{-- <li><a href="blog-details.html">Blog Details</a></li> --}}
+                                </ul>
+                            </li>
                             <li><a href="about">About</a></li>
                             <li><a href="why_attend">Why Attend</a></li>
                             <li><a href="speakers">Speakers</a></li>
                             <li><a href="#">Sponsorship Benefits</a></li>
                             <li><a href="contact-us">Contact</a></li>
+
                             @auth
                                 <li>
                                     <a href="blog.html">

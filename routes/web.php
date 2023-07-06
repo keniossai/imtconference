@@ -10,6 +10,7 @@ use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\TransactionPayController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\VerificationController;
@@ -36,7 +37,11 @@ Route::get('/test', function(){
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::view('/cards/create',    'cards.create')->name('cardse.create');
+
+Route::get('/press-release', [BlogController::class, 'index'])->name('blog');
+Route::get('/press-release/{id}/show', [BlogController::class, 'single_post'])->name('post.show');
+
+Route::view('/cards/create',    'cards.create')->name('cards.create');
 Route::post('/generate',        [CardController::class, 'generate'])->name('generate');
 Route::view('/why_attend',    'concept_note')->name('concept-note');
 Route::view('/about',    'about')->name('about');
