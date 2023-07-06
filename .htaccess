@@ -1,0 +1,24 @@
+Header set Content-Security-Policy "upgrade-insecure-requests" env=HTTPS
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+RewriteCond %{HTTP_REFERER} !^http://insurancemeetstech.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://insurancemeetstech.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://modioncommunication.africa.insurancemeetstech.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://modioncommunication.africa.insurancemeetstech.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.insurancemeetstech.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.insurancemeetstech.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.modioncommunication.africa.insurancemeetstech.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.modioncommunication.africa.insurancemeetstech.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://insurancemeetstech.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://insurancemeetstech.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://modioncommunication.africa.insurancemeetstech.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://modioncommunication.africa.insurancemeetstech.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.insurancemeetstech.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.insurancemeetstech.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.modioncommunication.africa.insurancemeetstech.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.modioncommunication.africa.insurancemeetstech.com$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,N
