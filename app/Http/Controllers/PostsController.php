@@ -9,7 +9,8 @@ class PostsController extends Controller
 {
     public function index()
     {
-        return view('dashboard.post');
+        $posts = Posts::get();
+        return view('dashboard.post', compact('posts'));
     }
 
     public function store(Request $request)

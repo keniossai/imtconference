@@ -51,13 +51,13 @@
                                                         aria-label=": activate to sort column descending"></th>
                                                     <th class="sorting" tabindex="0" aria-controls="user-tbl"
                                                         rowspan="1" colspan="1" style="width: 0px;"
-                                                        aria-label="User: activate to sort column ascending">Speaker</th>
+                                                        aria-label="User: activate to sort column ascending">Post</th>
                                                     <th class="sorting" tabindex="0" aria-controls="user-tbl"
                                                         rowspan="1" colspan="1" style="width: 0px;"
-                                                        aria-label="Email: activate to sort column ascending">Designation</th>
+                                                        aria-label="Email: activate to sort column ascending">Title</th>
                                                     <th class="sorting" tabindex="0" aria-controls="user-tbl"
                                                         rowspan="1" colspan="1" style="width: 0px;"
-                                                        aria-label="Position: activate to sort column ascending">Organisation
+                                                        aria-label="Position: activate to sort column ascending">Created at
                                                     </th>
                                                     <th class="sorting" tabindex="0" aria-controls="user-tbl"
                                                         rowspan="1" colspan="1" style="width: 0px;"
@@ -69,16 +69,17 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                @foreach ($posts as $post)
                                                     <tr role="row" class="odd">
                                                         <td class="sorting_1"></td>
                                                         <td>
                                                             <div class="d-flex align-items-center">
-                                                                <img src="" class="avatar rounded-circle" alt="">
+                                                                <img src="{{ asset("posts/$post->image") }}" class="avatar rounded-circle" alt="">
                                                             </div>
                                                         </td>
-                                                        <td>Hellp</td>
-                                                        <td>desscription</td>
-                                                        <td>slug</td>
+                                                        <td>{{ $post->title }}</td>
+                                                        <td>{{ Illuminate\Support\Str::limit($post->description, 10, $end='...') }}</td>
+                                                        <td>{{ $post->created_at }}</td>
                                                         <td>
                                                             <div class="dropdown">
                                                                 <div class="btn-link" data-bs-toggle="dropdown"
@@ -111,6 +112,7 @@
                                                             </div>
                                                         </td>
                                                     </tr>
+                                                @endforeach
                                             </tbody>
 
                                         </table>
