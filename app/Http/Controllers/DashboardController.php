@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Transaction;
 use App\Models\User;
+use App\Models\Posts;
 use App\Models\Speaker;
+use App\Models\Transaction;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
@@ -17,11 +18,12 @@ class DashboardController extends Controller
         $transactions_count      = Transaction::has('payments')->count();
         $transactions_sum_amount = Transaction::has('payments')->paid()->sum('amount');
         $speaker_count = Speaker::count();
+        $post_count = Posts::count();
 
         //dd(Transaction::has('payments')->pending()->count());
        // dd(Transaction::has('payments')->paid()->count());
 
-        return view('dashboard.index', compact(['users', 'users_count', 'transactions_count', 'transactions_sum_amount', 'speaker_count']));
+        return view('dashboard.index', compact(['users', 'users_count', 'transactions_count', 'transactions_sum_amount', 'speaker_count', 'post_count']));
     }
 
     public function speakers()
@@ -35,6 +37,7 @@ class DashboardController extends Controller
         $request->validate([
             'title'=>'required',
             'name'=>'required',
+            'designation'=>'required',
             'organization'=>'required',
             'image' => 'required|mimes:jpeg,jpg,png|max:10000'
         ]);
@@ -91,8 +94,7 @@ class DashboardController extends Controller
             $request->image->move(public_path('speaker'),$imageName);
             $speaker->image = $imageName;
         }
-
-//        $speaker->title = $request->title;
+        $speaker->title = $request->title;
         $speaker->name = $request->name;
         $speaker->slug = $request->slug;
         $speaker->gender = $request->gender;
@@ -101,7 +103,7 @@ class DashboardController extends Controller
 
         $speaker->save();
 
-        return Response::api(['message' => 'Speaker updated successfully']);
+        return back();
     }
 
     public function destroy($id)

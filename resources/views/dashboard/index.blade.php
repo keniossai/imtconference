@@ -91,7 +91,7 @@
                                 <div class="depostit-card-media d-flex justify-content-between style-1">
                                     <div>
                                         <h6>Total Media</h6>
-                                        <h3>20</h3>
+                                        <h3>{{ $post_count }}</h3>
                                     </div>
                                     <div class="icon-box bg-primary-light">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"

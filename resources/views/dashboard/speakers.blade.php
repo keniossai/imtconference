@@ -69,7 +69,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                @foreach ($speakers as $speaker)
+                                                @forelse ($speakers as $speaker)
                                                     <tr role="row" class="odd">
                                                         <td class="sorting_1"></td>
                                                         <td>
@@ -106,8 +106,8 @@
                                                                 </div>
                                                                 <div class="dropdown-menu dropdown-menu-right" style="">
                                                                     <a class="dropdown-item"
-                                                                        href="" data-bs-toggle="modal" data-bs-target="#updateModal">Edit</a>
-                                                                    <form action="speakers/{{ $speaker->id }}/delete" method="POST">
+                                                                        href="#" data-bs-toggle="modal" data-bs-target="#updateModal">Edit</a>
+                                                                    <form action="/dashboard/speakers/{{ $speaker->id }}/delete" method="POST">
                                                                         @csrf
                                                                         @method('DELETE')
                                                                         <button class="dropdown-item" type="submit">Delete</button>
@@ -116,7 +116,13 @@
                                                             </div>
                                                         </td>
                                                     </tr>
-                                                @endforeach
+
+                                                    @empty
+
+                                                    <div class="">
+                                                        <h5 class="text-center">No speaker found</h5>
+                                                    </div>
+                                                @endforelse
                                             </tbody>
 
                                         </table>
@@ -209,7 +215,7 @@
         </div>
     </div>
     {{-- Update Modal --}}
-    {{-- <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel1" style="display: none;" aria-hidden="true">
+    <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel1" style="display: none;" aria-hidden="true">
         <div class="modal-dialog modal-dialog-center modal-lg">
           <div class="modal-content">
             <div class="modal-header">
@@ -217,8 +223,9 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form  action="{{ route('speaker.store') }}" method="post" enctype="multipart/form-data">
+                <form  action="/dashboard/speakers/{{ $speaker->id }}/update" method="POST" enctype="multipart/form-data">
                     @csrf
+                    @method('PUT')
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="dz-default dlab-message upload-img mb-3">
@@ -237,7 +244,7 @@
 
                         <div class="col-xl-6 mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Fullname <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="" required>
+                            <input type="text" class="form-control" name="name" id="name" value="{{ old('name',$speaker->name) }}" required>
                         </div>
                         <div class="col-xl-6 mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Gender <span class="text-danger">*</span></label>
@@ -249,30 +256,30 @@
                         </div>
                         <div class="col-xl-6 mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Slug <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="slug" name="slug" placeholder="" required>
+                            <input type="text" class="form-control" id="slug" name="slug" value="{{ old('slug',$speaker->slug) }}" required>
                         </div>
                         <div class="col-xl-6 mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Designation <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="designation" name="designation" placeholder="" required>
+                            <input type="text" class="form-control" id="designation" name="designation" value="{{ old('designation',$speaker->designation) }}" required>
                         </div>
                         <div class="col-xl-6 mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Organisation <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="organization" name="organization" placeholder="" required>
+                            <input type="text" class="form-control" id="organization" name="organization" value="{{ old('organization',$speaker->organization) }}" required>
                         </div>
                         <div class="col-xl-6 mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Bio <span class="text-danger">*</span></label>
-                            <textarea name="bio" id="bio" cols="70" rows="10" required></textarea>
+                            <textarea name="bio" id="bio" cols="70" rows="10" required>{{ old('bio',$speaker->bio) }}</textarea>
                         </div>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Cancel</button>
-                      <button type="submit" class="btn btn-primary">Create <x-spinner /></button>
+                      <button type="submit" class="btn btn-primary">Update <x-spinner /></button>
                     </div>
                 </form>
             </div>
           </div>
         </div>
-    </div> --}}
+    </div>
 
 
 @endsection

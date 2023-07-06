@@ -69,50 +69,58 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                @foreach ($posts as $post)
-                                                    <tr role="row" class="odd">
-                                                        <td class="sorting_1"></td>
-                                                        <td>
-                                                            <div class="d-flex align-items-center">
-                                                                <img src="{{ asset("posts/$post->image") }}" class="avatar rounded-circle" alt="">
+                                                @forelse ($posts as $post)
+                                                <tr role="row" class="odd">
+                                                    <td class="sorting_1"></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="{{ asset("posts/$post->image") }}" class="avatar rounded-circle" alt="">
+                                                        </div>
+                                                    </td>
+                                                    <td>{{ $post->title }}</td>
+                                                    <td>{{ Illuminate\Support\Str::limit($post->description, 10, $end='...') }}</td>
+                                                    <td>{{ $post->created_at }}</td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <div class="btn-link" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                <svg width="24" height="24" viewBox="0 0 24 24"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
+                                                                        stroke="#737B8B" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
+                                                                        stroke="#737B8B" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                    <path
+                                                                        d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
+                                                                        stroke="#737B8B" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
                                                             </div>
-                                                        </td>
-                                                        <td>{{ $post->title }}</td>
-                                                        <td>{{ Illuminate\Support\Str::limit($post->description, 10, $end='...') }}</td>
-                                                        <td>{{ $post->created_at }}</td>
-                                                        <td>
-                                                            <div class="dropdown">
-                                                                <div class="btn-link" data-bs-toggle="dropdown"
-                                                                    aria-expanded="false">
-                                                                    <svg width="24" height="24" viewBox="0 0 24 24"
-                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path
-                                                                            d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
-                                                                            stroke="#737B8B" stroke-width="2"
-                                                                            stroke-linecap="round" stroke-linejoin="round">
-                                                                        </path>
-                                                                        <path
-                                                                            d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
-                                                                            stroke="#737B8B" stroke-width="2"
-                                                                            stroke-linecap="round" stroke-linejoin="round">
-                                                                        </path>
-                                                                        <path
-                                                                            d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
-                                                                            stroke="#737B8B" stroke-width="2"
-                                                                            stroke-linecap="round" stroke-linejoin="round">
-                                                                        </path>
-                                                                    </svg>
-                                                                </div>
-                                                                <div class="dropdown-menu dropdown-menu-right" style="">
-                                                                    <a class="dropdown-item"
-                                                                        href="" data-bs-toggle="modal" data-bs-target="#updateModal">Edit</a>
+                                                            <div class="dropdown-menu dropdown-menu-right" style="">
+                                                                <a class="dropdown-item"
+                                                                    href="#" data-bs-toggle="modal" data-bs-target="#updateModal">Edit</a>
 
+                                                                    <form action="/dashboard/posts/{{ $post->id }}/delete" method="POST">
+                                                                        @csrf
+                                                                        @method('DELETE')
                                                                         <button class="dropdown-item" type="submit">Delete</button>
-                                                                </div>
+                                                                    </form>
                                                             </div>
-                                                        </td>
-                                                    </tr>
-                                                @endforeach
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                @empty
+                                                    <div class="">
+                                                        <h5 class="text-center">No post found</h5>
+                                                    </div>
+                                                @endforelse
                                             </tbody>
 
                                         </table>
@@ -175,6 +183,49 @@
                     <div class="modal-footer">
                       <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Cancel</button>
                       <button type="submit" class="btn btn-primary">Create <x-spinner /></button>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    {{-- Update Modal --}}
+    <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-center modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel1">Edit Post {{ $post->title }}</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="/dashboard/posts/{{ $post->id }}/update" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    @method('PUT')
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="dz-default dlab-message upload-img mb-3">
+                                <div class="fallback">
+                                    <input name="image" type="file" id="image" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">title <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="title" id="title" value="{{ old('title',$post->title) }}" required>
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Slug <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="slug" name="slug" value="{{ old('slug',$post->slug) }}" required>
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Description <span class="text-danger">*</span></label>
+                            <textarea name="description" id="description" cols="70" rows="10" value="" required>{{ old('description',$post->description) }}</textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Cancel</button>
+                      <button type="submit" class="btn btn-primary">Update <x-spinner /></button>
                     </div>
                 </form>
             </div>

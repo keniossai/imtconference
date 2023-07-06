@@ -75,13 +75,17 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/dashboard/posts', [PostsController::class, 'index'])->name('posts.index');
     Route::post('/dashboard/posts', [PostsController::class, 'store'])->name('posts.store');
+    Route::get('/dashboard/posts{id}', [PostsController::class, 'edit']);
+    Route::put('/dashboard/posts/{id}/update', [PostsController::class, 'update']);
+    Route::delete('/dashboard/posts/{id}/delete', [PostsController::class, 'destroy']);
 
     Route::middleware('admin')->group(function () {
         Route::get('/dashboard',        [DashboardController::class, 'index'])->name('dashboard');
         Route::get('/dashboard/speakers',        [DashboardController::class, 'speakers'])->name('dashboard.speakers');
         Route::post('/dashboard/speakers',        [DashboardController::class, 'store'])->name('speaker.store');
-        // Route::get('speaker/{id}/edit',        [DashboardController::class, 'edit']);
-        Route::delete('speakers/{id}/delete',        [DashboardController::class, 'destroy'])->name('dashboard.destroy');
+        Route::get('/dashboard/speaker/{id}',        [DashboardController::class, 'edit']);
+        Route::put('/dashboard/speakers/{id}/update',        [DashboardController::class, 'update']);
+        Route::delete('/dashboard/speakers/{id}/delete',        [DashboardController::class, 'destroy']);
         Route::get('/payments',         [PaymentController::class, 'index'])->name('payments.index');
         Route::get('/registration-download', RegistrationDownloadController::class)->name('registration-download');
 
