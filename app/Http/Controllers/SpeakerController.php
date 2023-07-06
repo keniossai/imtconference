@@ -14,9 +14,15 @@ class SpeakerController extends Controller
     }
 
 
-    public function show(Speaker $speaker)
+    public function show($id)
     {
-        return view('speakers.show');
+        $speaker = Speaker::where('id', $id)->first();
+        return view('speakers.show', compact('speaker'));
     }
+    // public function show(Speaker $speaker)
+    // {
+    //     $speaker = Speaker::where('id')->first();
+    //     return view('speakers.show', ['speaker', $speaker]);
+    // }
 
 }
